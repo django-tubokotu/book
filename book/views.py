@@ -50,6 +50,7 @@ class DetailBookView(DetailView):
     context["review_list"] = self.object.review_set.all()
     return context
 
+
 class CreateBookView(CreateView):
   template_name = "book/book_create.html"
   model = Book
